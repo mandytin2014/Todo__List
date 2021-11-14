@@ -1,0 +1,78 @@
+@mixin flexbox($direction)
+    display: flex
+    justify-content: center
+    align-content: center
+
+*
+    font-family: 'Allison', cursive
+    font-family: 'Lora', serif 
+    border: none
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+    font-size: 18px
+    height: 50px
+    line-height: 50px
+    
+body
+    background: linear-gradient(90deg,#ffb5b5,#b8d4ff)
+
+.title
+    height: 20vh
+    font-size: 40px
+    margin: 3rem
+    text-align: center
+.todo
+    text-align: center
+    @include flexbox(row)
+    
+    margin: 2rem
+.todo__item
+
+    width: 350px
+    margin: 0 0.5rem
+    padding: 0 0.5rem
+    outline: none
+    
+.todo__date
+    width: 180px
+    margin: 0 0.5rem
+    padding: 0 0.5rem
+    outline: none
+    font-size: 16px
+.btn__add
+    width: 45px
+    height: 45px
+    display: block
+    margin: auto .5rem
+    filter: drop-shadow(0 0 0.25rem #c5c1ff)
+
+.item
+    width: 15vw
+    background-color: #fff
+    padding: 0 1rem 
+    overflow: scroll
+    -ms-overflow-style: none    /* IE and Edge */
+    scrollbar-width: none      /* Firefox */
+    
+.item::-webkit-scrollbar
+    display: none
+
+.delete
+    width: 50px
+    padding: 0.25rem 0.5rem
+    cursor: pointer
+    background-color: #a3daff
+.list
+    @include flexbox(row)
+    margin: 1rem 0
+
+i
+    color: white
+    font-size: 1.5rem
+    pointer-events: none
+    
+    
+    
+    
+
